@@ -61,11 +61,6 @@ public class SymlinkDownloader(String uri, String destinationPath, String path) 
 
             potentialFilePaths.Add(fileName);
             potentialFilePaths.Add(fileNameWithoutExtension);
-            _logger.Error($"======");
-            _logger.Error($"rcloneMountPath: {rcloneMountPath}");
-            _logger.Error($"fileName: {fileName}");
-            _logger.Error($"fileNameWithoutExtension: {fileNameWithoutExtension}");
-            _logger.Error($"======");
 
             potentialFilePaths = potentialFilePaths.Distinct().ToList();
 
